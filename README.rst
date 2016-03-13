@@ -1,7 +1,6 @@
 Shell lint pre-commit hook
 ##########################
 
-Shell lint pr
 Shell lint `pre-commit <http://pre-commit.com/>`_ hook. The hook runs
 :code:`/bin/sh -en` against found shell scripts.
 
@@ -10,7 +9,7 @@ Usage
 
 Add the following to your :code:`.pre-commit-config.yaml`:
 
-.. :code: yaml
+.. code:: yaml
 
     - repo: https://www.shore.co.il/git/shell-pre-commit/
       sha: v0.1.0
