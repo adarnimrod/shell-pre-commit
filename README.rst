@@ -4,8 +4,14 @@ Shell lint pre-commit hook
 Shell lint `pre-commit <http://pre-commit.com/>`_ hook. The hook runs
 :code:`/bin/sh -en` against found shell scripts.
 
-Usage
------
+Dependencies
+------------
+
+- :code:`/bin/sh`
+- Pre-commit
+
+Installation
+------------
 
 Add the following to your :code:`.pre-commit-config.yaml`:
 
@@ -15,6 +21,8 @@ Add the following to your :code:`.pre-commit-config.yaml`:
       sha: v0.1.0
       hooks:
       - id: shell-lint
+
+And run :code:`pre-commit autoupdate` to update the hooks.
 
 License
 -------
