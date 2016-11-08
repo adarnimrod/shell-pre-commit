@@ -1,0 +1,9 @@
+---
+- repo: local
+  hooks:
+  - id: shell-lint
+    name: Lint shell scripts
+    description: Run /bin/sh -en against shell scripts.
+    language: script
+    entry: shell-lint
+    files: shell-lint
