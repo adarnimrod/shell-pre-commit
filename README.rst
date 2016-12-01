@@ -1,6 +1,9 @@
 Shell lint pre-commit hook
 ##########################
 
+.. image:: https://travis-ci.org/adarnimrod/shell-pre-commit.svg?branch=master
+    :target: https://travis-ci.org/adarnimrod/shell-pre-commit
+
 Shell lint `pre-commit <http://pre-commit.com/>`_ hook. The hook runs
 :code:`/bin/sh -en` against found shell scripts.
 
