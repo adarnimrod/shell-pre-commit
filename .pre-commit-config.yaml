@@ -6,7 +6,7 @@
     -   id: check-yaml
     -   id: check-merge-conflict
 - repo: ./
-  sha: master
+  sha: v0.2.0
   hooks:
   - id: shell-lint
     files: shell-lint
