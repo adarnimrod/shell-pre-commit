@@ -9,3 +9,6 @@ install:
 
 script:
   - pre-commit run --all-files
+
+notifications:
+  email: false
