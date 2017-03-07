@@ -2,6 +2,7 @@
 - id: shell-lint
   name: Lint shell scripts
   description: Run /bin/sh -en against shell scripts.
-  language: script
-  entry: shell-lint
+  language: system
+  entry: /bin/sh
+  args: ['-en']
   files: \.(sh|bash|ksh|zsh)$
