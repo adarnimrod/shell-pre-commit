@@ -21,9 +21,10 @@ Add the following to your :code:`.pre-commit-config.yaml`:
 .. code:: yaml
 
     - repo: https://www.shore.co.il/git/shell-pre-commit/
-      sha: v0.2.0
+      sha: v0.3.0
       hooks:
       - id: shell-lint
+      - id: shellcheck
 
 And run :code:`pre-commit autoupdate` to update the hooks.
 

@@ -5,4 +5,10 @@
   language: system
   entry: /bin/sh
   args: ['-en']
-  files: \.(sh|bash|ksh|zsh)$
+  files: &shell_scripts \.(sh|bash|ksh|zsh)$
+- id: shellcheck
+  name: shellcheck
+  description: A shell script static analysis tool
+  language: system
+  entry: shellcheck
+  files: *shell_scripts
