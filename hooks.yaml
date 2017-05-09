@@ -3,8 +3,8 @@
   name: Lint shell scripts
   description: Run /bin/sh -en against shell scripts.
   language: system
-  entry: /bin/sh
-  args: ['-en']
+  entry: /usr/bin/env
+  args: ['-i', '/bin/sh', '-en']
   files: &shell_scripts \.(sh|bash|ksh|zsh)$
 - id: shellcheck
   name: shellcheck
