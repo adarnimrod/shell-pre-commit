@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+for filename in "$@"
+do
+    /usr/bin/env -i /bin/sh "$filename"
+done

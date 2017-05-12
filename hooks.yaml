@@ -2,9 +2,8 @@
 - id: shell-lint
   name: Lint shell scripts
   description: Run /bin/sh -en against shell scripts.
-  language: system
-  entry: /usr/bin/env
-  args: ['-i', '/bin/sh', '-en']
+  language: script
+  entry: ./shell-lint
   files: &shell_scripts \.(sh|bash|ksh|zsh)$
 - id: shellcheck
   name: shellcheck
