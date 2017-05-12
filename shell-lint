@@ -4,4 +4,4 @@ for filename in "$@"
 do
     /usr/bin/env -i /bin/sh -en "$filename" || failed=1
 done
-[ "${failed:-0}" -eq 1 ] && exit 1
+[ "${failed:-0}" -eq 0 ]
