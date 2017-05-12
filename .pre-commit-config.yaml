@@ -5,3 +5,10 @@
     -   id: check-added-large-files
     -   id: check-yaml
     -   id: check-merge-conflict
+-   repo: https://www.shore.co.il/git/shell-pre-commit/
+    sha: v0.5.0
+    hooks:
+    -   id: shell-lint
+        files: shell-lint
+    -   id: shellcheck
+        files: shell-lint
