@@ -10,4 +10,5 @@
   description: A shell script static analysis tool
   language: system
   entry: shellcheck
+  args: ['--external-sources']
   files: *shell_scripts
