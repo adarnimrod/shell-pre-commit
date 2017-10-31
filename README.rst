@@ -1,17 +1,25 @@
-Shell lint pre-commit hook
-##########################
+Shell pre-commit hooks
+######################
 
 .. image:: https://travis-ci.org/adarnimrod/shell-pre-commit.svg?branch=master
     :target: https://travis-ci.org/adarnimrod/shell-pre-commit
 
-Shell lint `pre-commit <http://pre-commit.com/>`_ hook. The hook runs
-:code:`/bin/sh -en` against found shell scripts.
+Shell `pre-commit <http://pre-commit.com/>`_ hooks.
+
+Hooks
+-----
+
+- :code: `shell-lint` - Runs :code:`/bin/sh -en` against identified shell
+  scripts.
+- :code: `shellcheck` - Runs `shellcheck
+  <https://github.com/koalaman/shellcheck/>`_ agains identified shell scripts.
 
 Dependencies
 ------------
 
-- :code:`/bin/sh`
-- Pre-commit
+- :code: `/bin/sh`
+- :code: `shellcheck`
+- Pre-commit 0.15.0 or later.
 
 Installation
 ------------
@@ -21,7 +29,7 @@ Add the following to your :code:`.pre-commit-config.yaml`:
 .. code:: yaml
 
     - repo: https://www.shore.co.il/git/shell-pre-commit/
-      sha: v0.4.0
+      sha: v0.6.0
       hooks:
       - id: shell-lint
       - id: shellcheck
